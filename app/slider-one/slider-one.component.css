@@ -1,0 +1,209 @@
+.sectionOne {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.952);
+}
+
+.btnGlobal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 90vh;
+    width: 60%;
+    background-color: rgb(24, 24, 24);
+    box-shadow: -5px 5px 30px #d697df, 5px -5px 30px #e5a0ef;
+    border-radius: 10px;
+    border: none;
+    animation: card 3s infinite ease-in-out;
+}
+
+@keyframes card {
+    0% {
+        box-shadow: -5px 5px 30px #9b6eb3, 5px -5px 30px #c3b9ff;
+    }
+    50% {
+        box-shadow: -5px 5px 30px #d697df, 5px -5px 30px #e5a0ef;
+    }
+    100% {
+        box-shadow: -5px 5px 30px #9b6eb3, 5px -5px 30px #c3b9ff;
+    }
+}
+
+.imageSlide {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    animation: imageSlide 5s infinite ease-in-out;
+}
+
+@keyframes imageSlide {
+    0% {
+        opacity: 0;
+        border: solid#c3b9ff;
+    }
+    50% {
+        opacity: 1;
+        border: solid #e0a0e9;
+    }
+    100% {
+        opacity: 0;
+        border: solid#c3b9ff;
+    }
+}
+
+.text {
+    word-break: inherit;
+    word-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-top: 40px;
+    height: 380px;
+    width: 60%;
+    animation: textColor 5s ease-in-out infinite;
+}
+
+@keyframes textColor {
+    0% {
+        opacity: 0;
+        color: #c488cc;
+    }
+    50% {
+        opacity: 1;
+        color: #c3b9ff;
+    }
+    100% {
+        opacity: 0;
+        color: #c488cc;
+    }
+}
+
+.imgTwo {
+    padding-top: 12px;
+    width: 90%;
+    height: 70%;
+    background-size: contain;
+    background-position: center;
+    object-fit: contain;
+}
+
+.textTwo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 17px;
+    height: 25%;
+    width: 80%;
+    color: #c6ffb9;
+}
+
+.globalTwo {
+    right: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    height: 90vh;
+    width: 80%;
+    background-position: center;
+    background-color: #000000;
+    border: #8d6293;
+    border-radius: 5px;
+    gap: 50px;
+    transform: translateY(0px);
+    animation: globalTwo 1s ease-in-out both;
+}
+
+@keyframes globalTwo {
+    from {
+        right: -100%;
+        box-shadow: -5px 5px 30px #78ad71, 5px -5px 30px #d1fdc7;
+    }
+    to {
+        right: 10%;
+        box-shadow: -5px 5px 30px #486d43, 5px -5px 30px #c6ffb9;
+    }
+}
+
+.btnTwo {
+    background-color: rgb(141, 255, 156);
+    font-size: 2em;
+    font-weight: 900;
+    font-family: sans-serif;
+    position: absolute;
+    left: 94%;
+    top: 5%;
+    width: 40px;
+    height: 40px;
+    border: solid 3px;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 400px) {
+    .globalTwo {
+        height: 80vh;
+        width: 95vw;
+        animation: globalTwo 1s ease-in-out both;
+    }
+    @keyframes globalTwo {
+        from {
+            right: -100%;
+            box-shadow: -5px 5px 30px #78ad71, 5px -5px 30px #d1fdc7;
+        }
+        to {
+            right: 2%;
+            box-shadow: -5px 5px 30px #486d43, 5px -5px 30px #c6ffb9;
+        }
+    }
+    .btnGlobal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 78vh;
+        width: 95vw;
+    }
+    .text {
+        text-align: center;
+        font-size: 1em;
+    }
+    .btnTwo {
+        left: 85%;
+        top: 2%;
+    }
+    .imgTwo {
+        padding-top: 12px;
+        width: 80vw;
+        height: 50vh;
+        background-size: contain;
+        background-position: center;
+        object-fit: contain;
+    }
+    .textTwo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 1em;
+        height: 25%;
+        width: 90%;
+        color: #c6ffb9;
+    }
+}

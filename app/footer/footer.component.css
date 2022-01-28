@@ -1,0 +1,78 @@
+#footer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 45px;
+  height: 140px;
+  width: 100%;
+  position: absolute;
+  z-index: 15;
+  text-align: center;
+  background-color: black;
+  color: white;
+  opacity: 0.7;
+  transition: all 1s;
+}
+
+.copyright a {
+  color: rgb(7, 7, 7);
+  height: 30px;
+}
+
+
+h3 {
+  height: 20px;
+  width: 100%;
+}
+
+
+.cardContact {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin-top: -1px;
+  justify-content: center;
+  background-color: black;
+  opacity: .7;
+  gap: 20%;
+}
+
+a {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mail a img {
+  height: 45px;
+  width: auto;
+}
+
+.linkedin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkedin a img {
+  height: 34px;
+  width: auto;
+}
+
+.github {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.github a img {
+  height: 34px;
+  width: auto;
+}

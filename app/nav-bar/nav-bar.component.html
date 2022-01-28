@@ -1,0 +1,27 @@
+<nav [ngStyle]="{height:hauteur ? '0' : '360px'}">
+  <img src="\assets\img\logoFethi.jfif" alt="logo portant le nom  fethi">
+  <ul class="liste" [ngStyle]="{opacity:hauteur2 ? '0' : '1'}">
+    <li>
+      <a routerLink="home">Home</a>
+    </li>
+    <li>
+      <a routerLink="formation">Ma formation & Parcours Pro.</a>
+    </li>
+    <li>
+      <a routerLink="hobby">Hobby</a>
+    </li>
+    <li>
+      <a routerLink="projet">Mes Projets</a>
+    </li>
+    <li>
+      <a routerLink="contact">Contact</a>
+    </li>
+  </ul>
+  <button type="button" (click)="menuOpen()">
+    <div class="burger">
+      <div class="traitOne"></div>
+      <div class="traitTwo"></div>
+      <div class="traitThree"></div>
+    </div>
+  </button>
+</nav>

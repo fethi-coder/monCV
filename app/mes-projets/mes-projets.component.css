@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Zilla+Slab:ital,wght@1,300&display=swap');
+h2 {
+    font-family: 'Zilla Slab', serif;
+    background-color: rgba(0, 0, 0, 0.952);
+    font-size: 23px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin-bottom: 0px;
+    color: rgb(195, 144, 48);
+    text-align: center;
+}

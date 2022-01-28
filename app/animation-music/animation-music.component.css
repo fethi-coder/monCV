@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap");
+.text {
+    width: 300px;
+    margin: 0 12px 0 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.text p {
+    width: 70%;
+    height: 100px;
+    font-size: 30px;
+    margin-left: 12px;
+    font-family: "Comforter Brush", cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f38df3;
+    color: white;
+    box-shadow: -4px 4px 8px #a9a5ab, 4px -4px 8px #ffffff;
+    animation: neon 5s infinite;
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 42px rgb(230, 18, 124), 0 0 77px rgb(230, 18, 124);
+        opacity: 1;
+    }
+    60% {
+        text-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px rgb(230, 18, 124), 0 0 0px rgb(230, 18, 124);
+        opacity: 0.7;
+    }
+    to {
+        text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 42px rgb(230, 18, 124), 0 0 77px rgb(230, 18, 124);
+        opacity: 1;
+    }
+}
+
+.container {
+    position: relative;
+    display: flex;
+    width: 40px;
+    height: 45px;
+    background: rgb(34, 193, 195);
+    background: linear-gradient( 183deg, rgba(34, 193, 195, 1) 0%, rgba(250, 45, 253, 1) 100%);
+    padding: 0;
+    box-shadow: -4px 4px 8px #a9a5ab, 4px -4px 8px #ffffff;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient( 360deg, rgba(250, 45, 253, 1), rgb(255, 201, 242)) 1;
+}
+
+.traitOne {
+    margin: 0;
+    width: 6px;
+    height: 100%;
+    background-color: rgb(253, 253, 253);
+    animation: traitOne 1s infinite;
+}
+
+@keyframes traitOne {
+    from {
+        height: 100%;
+    }
+    50% {
+        height: 5%;
+    }
+    to {
+        height: 100%;
+    }
+}
+
+.traitTwo {
+    margin: 0;
+    width: 6px;
+    height: 100%;
+    background-color: aliceblue;
+    animation: traitTwo 0.8s infinite;
+}
+
+@keyframes traitTwo {
+    from {
+        height: 100%;
+    }
+    50% {
+        height: 10%;
+    }
+    to {
+        height: 100%;
+    }
+}
+
+.traitThree {
+    width: 6px;
+    height: 100%;
+    background-color: aliceblue;
+    animation: traitThree 2s infinite;
+}
+
+@keyframes traitThree {
+    from {
+        height: 100%;
+    }
+    50% {
+        height: 15%;
+    }
+    to {
+        height: 100%;
+    }
+}
+
+.traitFour {
+    width: 6px;
+    height: 100%;
+    background-color: aliceblue;
+    animation: traitFour 4s infinite;
+}
+
+@keyframes traitFour {
+    from {
+        height: 100%;
+    }
+    50% {
+        height: 20%;
+    }
+    to {
+        height: 100%;
+    }
+}
+
+.traitFive {
+    width: 6px;
+    height: 100%;
+    background-color: aliceblue;
+    animation: traitFive 0.5s infinite;
+}
+
+@keyframes traitFive {
+    from {
+        height: 100%;
+    }
+    50% {
+        height: 25%;
+    }
+    to {
+        height: 100%;
+    }
+}
+
+.traitSix {
+    width: 6px;
+    height: 100%;
+    background-color: aliceblue;
+    animation: traitSix 6s infinite;
+}
+
+@keyframes traitSix {
+    from {
+        height: 100%;
+    }
+    50% {
+        height: 25%;
+    }
+    to {
+        height: 100%;
+    }
+}
+
+.traitSeven {
+    width: 6px;
+    height: 100%;
+    background-color: aliceblue;
+    animation: traitSeven 1s infinite;
+}
+
+@keyframes traitSeven {
+    from {
+        height: 100%;
+    }
+    50% {
+        height: 25%;
+    }
+    to {
+        height: 100%;
+    }
+}

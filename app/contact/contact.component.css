@@ -1,0 +1,200 @@
+.sectionOne {
+    height: 1200px;
+    font-family: "Playfair Display SC", serif;
+    background-image: url("https://images.pexels.com/photos/7412043/pexels-photo-7412043.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    transform: translateY(15px);
+    padding: 0;
+    height: 10%;
+    font-size: 50px;
+    color: rgb(79, 93, 76);
+}
+
+.cardContact {
+    height: 50%;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.tel {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    border: solid 20px rgb(5, 5, 5);
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: -8px 8px 14px #0e0d0d, 8px -8px 14px #2e2d2d;
+    font-size: 23px;
+    color: white;
+    border: solid rgb(74, 122, 62);
+}
+
+.tel a {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tel a img {
+    height: 54px;
+}
+
+.linkedin {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    border: solid 20px rgb(5, 5, 5);
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: -8px 8px 14px #0e0d0d, 8px -8px 14px #2e2d2d;
+    font-size: 23px;
+    border: solid rgb(74, 122, 62);
+}
+
+.linkedin a {
+    display: flex;
+    flex-direction: column;
+}
+
+.linkedin a img {
+    height: 54px;
+}
+
+.github {
+    height: 300px;
+    width: 300px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    border: solid 20px rgb(5, 5, 5);
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: -8px 8px 14px #0e0d0d, 8px -8px 14px #2e2d2d;
+    font-size: 23px;
+    border: solid rgb(74, 122, 62);
+}
+
+.github a {
+    display: flex;
+    flex-direction: column;
+}
+
+.github a img {
+    height: 54px;
+}
+
+.mail {
+    height: 110px;
+    width: 30%;
+    font-family: "Playfair Display SC", serif;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    font-size: 18px;
+    opacity: 0.9;
+    border: solid rgb(74, 122, 62);
+}
+
+.mail a {
+    display: flex;
+    flex-direction: column;
+}
+
+.mail a img {
+    height: 54px;
+}
+
+.btnPro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.btnCv {
+    color: rgb(53, 83, 45);
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.btnCvOne {
+    font-family: "Playfair Display SC", serif;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 45px;
+    border: solid rgb(74, 122, 62);
+    color: aliceblue;
+    border-radius: 5px;
+    background-color: #0e0d0d;
+    animation: cv 3s infinite;
+}
+
+@keyframes cv {
+    from {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 8px 8px 16px #2c2c2c, -8px 8px 16px #464646, -8px -8px 16px #2c2c2c, -8px -8px 16px #2c2c2c;
+    }
+    to {
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .sectionOne {
+        height: 1000px;
+    }
+    .cardContact {
+        display: flex;
+        flex-direction: column;
+        margin-top: -40px;
+    }
+    .mail {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid rgb(74, 122, 62);
+    }
+    .mail a {
+        width: 95%;
+        font-size: 14px;
+    }
+}

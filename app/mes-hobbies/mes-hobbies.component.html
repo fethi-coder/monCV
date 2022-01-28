@@ -1,0 +1,39 @@
+<div class="animateMusic">
+    <app-animation-music></app-animation-music>
+</div>
+
+<H2 class="hobbyTitle">En ce moment la musique que j'écoute </H2>
+
+<section class="SectionOne">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Vq_PPPR96Zw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/plPtZPem94o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" alowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/0AvWV6Mk374" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/liPu1_aPH5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+<H2 class="hobbyTitle">Les films et séries que je regarde</H2>
+<section class="SectionTwo">
+    <img class="cine" src="/assets/img/IMG_0290 (2).jpg" alt="photo du cinéma Part-Dieu à Lyon" />
+    <div *ngFor="let a of filmEtSerie">
+        <a [href]="a.urlExt" target="blank">
+            <div class="card">
+                <img class="imageSerie" [src]="a.url" [alt]="a.alt" />
+                <p class="para">{{ a.paragraphe }}</p>
+            </div>
+        </a>
+    </div>
+</section>
+
+<H2 class="hobbyTitle">Mes Photos</H2>
+
+<section class="SectionThree">
+    <div class="card-bloc" *ngFor="let a of photo">
+        <img class="card-img" [src]="a.url" alt="" appEffect />
+        <div class="card-para">
+            <p>{{ a.paragraphe }}</p>
+            <p>
+                adresse:<br /> {{ a.adresse }}
+            </p>
+        </div>
+    </div>
+</section>

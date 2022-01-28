@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Zilla+Slab:ital,wght@1,300&display=swap');
+
+/*------------------------------------------- Global ----------------------------------------------*/
+
+.hobbyTitle {
+    font-family: 'Zilla Slab', serif;
+    font-weight: bolder;
+    font-size: 30px;
+    width: auto;
+    height: 100%;
+    margin-top: 24px;
+    margin-bottom: 44px;
+    text-align: center;
+}
+
+
+/*---------------------------------------- Section First --------------------------------------------*/
+
+.SectionOne {
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( 0deg, rgba(204, 116, 193, 0.28335084033613445) 0%, rgba(253, 45, 210, 0.9304096638655462) 100%);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.SectionOne:hover {
+    gap: 10px;
+}
+
+iframe {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: initial;
+    width: 20%;
+    height: 80%;
+    border: solid wheat;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 50px 30px -20px;
+    transition: all 1s;
+    background-image: cover;
+}
+
+iframe:hover {
+    width: 35%;
+}
+
+
+/*-----------------------------------------Section Second ----------------------------------------------------*/
+
+.SectionTwo {
+    background-repeat: no-repeat;
+    background: linear-gradient(#3e1f42, #0d032e7e);
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+
+.cine {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.9;
+    align-items: center;
+    filter: grayscale(100%);
+    background-size: contain;
+}
+
+.card {
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 50%;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    transition: all 0.3s ease-out;
+}
+
+.card:hover {
+    transition: all 0.6s ease-out;
+    transform: translateX(23px);
+    background-color: antiquewhite;
+}
+
+.imageSerie {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 180px;
+}
+
+.para {
+    width: 50%;
+    font-size: 13px;
+    text-align: center;
+    outline: none;
+    transition: all 0.3s ease-out;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*---------------------------------------- Section Third -----------------------------------------------*/
+
+.SectionThree {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    background: rgb(152, 97, 219);
+    background: linear-gradient(180deg, rgba(152, 97, 219, 1) 0%, rgba(83, 151, 171, 1) 54%, rgba(42, 182, 210, 1) 97%);
+}
+
+.card-bloc {
+    position: relative;
+    z-index: 1;
+    width: 17%;
+    height: 300px;
+    border-radius: 0.5em;
+    background-color: aliceblue;
+    border: solid wheat;
+    cursor: zoom-out;
+}
+
+.card-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 3;
+    border-radius: 0.5em 0.5em 0em 0em;
+    box-shadow: rgb(185, 182, 202) 0px 30px 50px -10px;
+    opacity: 0.2;
+    transition: all 1s;
+}
+
+.card-img:hover {
+    opacity: 1;
+    border-radius: 0.5em 0.5em 0em 0em;
+    transition: all 0.1s;
+}
+
+.card-para {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30%;
+    font-size: 13px;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: black;
+    border-radius: 0.5em;
+}
+
+.card-para p {
+    width: 90%;
+    height: 10%;
+    opacity: .9;
+}
+
+@media (max-width:900px) {
+    .hobbyTitle {
+        margin-top: 60px;
+    }
+    .SectionOne {
+        display: flex;
+        flex-direction: column;
+        height: 1300px;
+    }
+    iframe {
+        height: 30%;
+        width: 90%;
+    }
+    iframe:hover {
+        height: 30%;
+        width: 90%;
+    }
+    .SectionTwo {
+        height: 100%;
+    }
+    .cine {
+        display: none;
+    }
+    .card {
+        height: 20%;
+        width: 70%;
+    }
+    .para {
+        width: 90%;
+        font-size: larger;
+        text-justify: auto;
+    }
+    .SectionThree {
+        display: flex;
+        flex-direction: column;
+        height: 1800px;
+    }
+    .card-bloc {
+        width: 90%;
+    }
+}
+
+
+/*------------------------------------------------- animate --------------------------------------------*/
+
+.animateMusic {
+    height: 100%;
+    width: 100%;
+    margin-top: 45px;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

@@ -1,0 +1,23 @@
+.retour {
+    position: absolute;
+    z-index: 16;
+    left: 92%;
+    opacity: 0.5;
+    transform: translateY(-47px);
+    border-radius: 50px;
+    border: solid 3px rgb(20, 20, 20);
+    background-color: rgb(199, 199, 199);
+    box-shadow: 3px 3px 6px #434343, -3px -3px 6px #5b5b5b;
+}
+
+img {
+    height: 33px;
+    transform: rotate(-90deg);
+    background-size: cover;
+}
+
+@media (max-width:900px) {
+    .retour {
+        left: 89%;
+    }
+}

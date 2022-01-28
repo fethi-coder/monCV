@@ -1,0 +1,33 @@
+<section class="sectionOne">
+
+
+    <button class="btnGlobal " (click)="detail(a) " *ngFor="let a of image ">
+        <span class="grandImg ">
+            <img class="imageSlide " src="{{a.url}} " alt="image du site la boutique mobile ">
+        </span>
+        <div class="text ">
+            <p> {{a.language}}</p>
+            <p>{{a.tech}}</p>
+            <p>{{a.desc}}</p>
+        </div>
+    </button>
+    <div class="globalTwo " *ngIf="open ">
+        <button class="btnTwo " (click)="close() ">X</button>
+        <img class="imgTwo " src="{{zoomImage.url}} " alt="{{zoomImage.alt}} ">
+        <div class="textTwo">
+            <p>{{zoomImage.language}}</p>
+            <p>{{zoomImage.desc}}</p>
+        </div>
+    </div>
+    <div class="spinner " *ngIf="spinner ">
+        <div class="spinner-grow text-secondary " role="status ">
+            <span class="sr-only ">Loading...</span>
+        </div>
+        <div class="spinner-grow text-success " role="status ">
+            <span class="sr-only ">Loading...</span>
+        </div>
+        <div class="spinner-grow text-danger " role="status ">
+            <span class="sr-only ">Loading...</span>
+        </div>
+    </div>
+</section>

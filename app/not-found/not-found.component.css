@@ -1,0 +1,54 @@
+.containerGlobal {
+    height: 800px;
+    width: 100%;
+    background-image: url("https://images.pexels.com/photos/899321/pexels-photo-899321.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sectionOne {
+    position: absolute;
+    z-index: 11;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.notFound {
+    font-family: 'Courier New', Courier, monospace;
+    height: 25%;
+    width: 25%;
+    transform: translateY(30px);
+    z-index: 12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 15%;
+    margin-right: 34%;
+    color: antiquewhite;
+    border: solid white;
+    border-radius: 25px;
+    background: #1c1c1c;
+    box-shadow: 5px 5px 10px #181818, -5px -5px 10px #202020;
+}
+
+.notFound p {
+    font-size: 6vh;
+    text-align: center;
+}
+
+.boutton {
+    height: 40px;
+    width: 100px;
+    margin-bottom: 12px;
+    background-color: bisque;
+    border: solid white;
+    color: black;
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 2px;
+}
